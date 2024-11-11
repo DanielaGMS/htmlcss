@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página musical </title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(19, 18, 18, 0.955);
+            color: #f4f4f4;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 80px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .menu {
+            background-color: rgb(39, 51, 116);
+            padding: 10px 0;
+            text-align: center;
+
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+
+
+
+        }
+
+        .menu a:hover {
+            background-color: rgba(3, 20, 81, 0.193);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .music-list {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .music-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(43, 52, 103);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.44);
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.995);
+            background-color: rgb(117, 110, 110);
+            border-radius: 5px;
+            transition: 0.3s;
+
+        }
+
+        .btn:hover {
+            background-color: rgba(19, 18, 18, 0.955);
+        }
+
+        /* Galeria de Imagens */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 60px;
+        }
+
+        .gallery-item{
+            border: 2px solid #e1e4e530;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 200px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .gallery-item .desc {
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(19, 18, 18, 0);
+        }
+
+        /* Imagens com Filtros */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .filters img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .brightness {
+            filter: brightness(1.5);
+        }
+
+        .contrast {
+            filter: contrast(150%);
+        }
+
+
+        .about {
+            text-align: center;
+            max-width: 700px;
+            margin: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="#musicas"> Músicas </a>
+        <a href="#galeria"> Principais álbuns </a>
+        <a href="#filtros"> Fotos </a>
+        <a href="#sobre"> Sobre </a>
+        <a href="#login.html"> Login </a>
+    </nav>
+
+    <h1> Bem vindo ao
+        <br> Mundo da Música 
+    </h1>
+
+    <div class="container">
+
+        <section id="musicas" class="music-list">
+            <h2> Playlist de músicas</h2>
+            <div class="music-item">
+                <span> L'AMOUR DE MA VIE </span>
+                <button class="btn" onclick="window.location.href='escutar.html'">Ouça Aqui</button>
+            </div>
+
+
+            <div class="music-item">
+                <span> WILDFLOWER </span>
+                <button class="btn" onclick="window.location.href='escutar.html1'">Ouça Aqui</button>
+            </div>
+
+
+
+            <div class="music-item">
+                <span> BIRDS OF A FEATHER </span>
+                <button class="btn" onclick="window.location.href='escutar.html2'">Ouça Aqui</button>
+            </div>
+
+
+
+            <div class="music-item">
+                <span> i love you </span>
+                <button class="btn" onclick="window.location.href='escutar.html3'">Ouça Aqui</button>
+            </div>
+
+        </section>
+
+
+        <section id="galeria">
+            <h2>Principais álbuns</h2>
+            <div class="gallery-container">
+
+
+                <div class="gallery-item">
+                    <img src="Albuns/Billie-Eilish-Hit-Me-Hard-and-Soft.webp" alt="Imagem 1">
+                    <div class="desc"> Billie Eilish - Hit me hard and soft</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Albuns/When_We_Fall_Asleep,_Where_Do_We_Go.png" alt="Imagem 2">
+                    <div class="desc"> Billie Eilish - When We Fall Asleep, Where Do We Go</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Albuns/OIP.jfif" alt="Imagem 3">
+                    <div class="desc"> Billie Eilish - happier than ever </div>
+                </div>
+
+
+
+        
+
+            </div>
+        </section>
+
+
+
+        <section id="filtros">
+            <h2>Fotos</h2>
+            <div class="filters">
+                <img src="Imagens/Billie1.jpg" alt="Imagem 1">
+                <img src="Imagens/Billie2.webp" alt="Imagem 2" class="grayscale">
+                <img src="Imagens/Billie3.jpg" alt="Imagem 3" class="sepia">
+                <img src="Imagens/Billie4.jpg" alt="Imagem 4" class="brightness">
+                <img src="Imagens/Billie5.avif" alt="Imagem 5" class="contrast">
+        </section>
+
+    
+
+        <section id="sobre" class="about">
+            <h2> Sobre a cantora </h2>
+            <p>
+            Billie Eilish é uma cantora, compositora e produtora musical americana que ganhou reconhecimento mundial por
+            sua música inovadora e estilo único. Nascida em 18 de dezembro de 2001, em Los Angeles, Califórnia, Billie
+            cresceu em uma família envolvida com a música, o que influenciou sua carreira desde cedo. Ela se tornou
+            famosa com o lançamento de sua música "Ocean Eyes", que foi escrita por ela e seu irmão Finneas O'Connell,
+            também músico e colaborador.
+
+            O seu álbum de estreia, *When We All Fall Asleep, Where Do We Go?* (2019), foi um grande sucesso, com hits
+            como "Bad Guy" e "Bury a Friend", e lhe rendeu vários prêmios, incluindo cinco prêmios Grammy, incluindo
+            Álbum do Ano, Gravação do Ano e Canção do Ano. A sonoridade de Billie Eilish é conhecida por ser
+            melancólica, introspectiva e experimental, mesclando pop, eletrônica e elementos de música alternativa.
+
+            Ela é também reconhecida pelo seu estilo visual peculiar, frequentemente escolhendo roupas oversized e
+            desafiando as convenções da indústria musical em relação à imagem das artistas femininas. Além disso, Billie
+            Eilish tem sido uma voz importante em temas como saúde mental, sustentabilidade e direitos humanos.
+
+            Seu segundo álbum, *Happier Than Ever* (2021), continuou a explorar temas emocionais e pessoais, com uma
+            sonoridade mais introspectiva e momentos de maior experimentação musical, recebendo também grande aclamação.
+
+            Billie é uma das artistas mais influentes da sua geração e continua a quebrar barreiras na música e na
+            cultura pop.
+            </p>
+        </section>
+    </div>
+</body>
+
+
+
+<!-- Rodapé -->
+<footer style="background-color: rgb(39, 51, 116); color: #f4f4f4; padding: 15px; text-align: center; margin-top: 30px;">
+    <p>&copy; 2024 Mundo da Música. Todos os direitos reservados.</p>
+</footer>
+
+
+</div>
+</nav>
+</body>
+
+</html>
